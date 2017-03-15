@@ -85,6 +85,11 @@ int main(int argc, const char * argv[]) {
     lst1.splice(p1,lst2,p2,p3);
     //将[p2,p3)插入p1之前，并从lst2中删除[p2,p3)
     std::cout<<"9)";PrintList(lst1);std::cout<<std::endl;
-    std::cout<<"10)";PrintList(lst2);std::cout<<std::endl;
+    std::cout<<"10)";
+    for(auto& i:lst2)
+    {
+        std::cout<<i<<",";
+    }
+    std::cout<<std::endl;
     return 0;
 }
