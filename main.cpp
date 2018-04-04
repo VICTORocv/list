@@ -59,7 +59,7 @@ int main(int argc, const char * argv[]) {
     lst1.push_front(1);
     int list2[7]={10,20,30,30,30,40,40};
     vector<int> List2(list2,list2+7);
-    std::copy(List2.begin(),List2.end(),std::back_inserter(lst2));//将vecto复制到list，注意不能直接将数组复制到list!
+    std::copy(List2.begin(),List2.end(),std::back_inserter(lst2));//将vector复制到list，注意不能直接将数组复制到list!
     std::cout<<"1)";PrintList(lst1);std::cout<<std::endl;
     std::cout<<"2)";PrintList(lst2);std::cout<<std::endl;
     lst2.sort();//list容器的排序函数
